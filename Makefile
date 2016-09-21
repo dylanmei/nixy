@@ -1,9 +1,9 @@
-VERSION        := 0.4.10
 TARGET         := nixy
 BINARY         := bin/$(TARGET)
 DEFAULT_TARGET := build
 SOURCEDIR=.
 SOURCES        := $(shell find $(SOURCEDIR) -name '*.go')
+VERSION        := $(shell cat .goxc.json | jq -r '.PackageVersion')
 
 $(BINARY): $(SOURCES)
 	GOARCH=amd64 GOOS=linux go build -a \
