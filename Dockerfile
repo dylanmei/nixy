@@ -1,7 +1,7 @@
 # docker.artifactory.amer.gettywan.com/bowie/nixy:dev
 FROM alpine:3.3
 
-ENV NGINX_VERSION 1.8.1
+ENV NGINX_VERSION 1.9.11
 
 ENV GPG_KEYS B0F4253373F8F6F510D42178520A9993A1C052F8
 ENV CONFIG "\
